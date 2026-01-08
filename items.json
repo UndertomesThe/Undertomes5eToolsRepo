@@ -13,8 +13,6 @@
       "dmgType": "S",
       "property": ["V", "H"],
 
-      "range": null,
-
       "entries": [
         "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
       ]

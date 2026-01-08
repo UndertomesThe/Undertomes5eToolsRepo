@@ -15,7 +15,7 @@
   "spell": [
     "spells.json"
   ],
-  "conditions" : [
+  "condition" : [
     "conditions.json"
   ],
   "feat": [
