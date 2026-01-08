@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "version": "1.0.0"
+  },
+  "spell": [
+    "spells.json"
+  ],
+  "feat": [
+    "feats.json"
+  ],
+  "item": [
+    "items.json"
+  ]
+}

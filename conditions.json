@@ -1,0 +1,21 @@
+{
+  "condition": [
+    {
+      "name": "Crushed",
+      "source": "HB",
+      "page": 1,
+
+      "entries": [
+        "A crushed creature suffers the following effects:",
+        {
+          "type": "list",
+          "items": [
+            "The creature's speed is reduced to 0.",
+            "Attack rolls against the creature have advantage.",
+            "The creature has disadvantage on Strength and Dexterity checks."
+          ]
+        }
+      ]
+    }
+  ]
+}

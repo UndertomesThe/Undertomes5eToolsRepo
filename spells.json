@@ -1,0 +1,38 @@
+{
+  "spell": [
+    {
+      "name": "Gravity Pulse",
+      "source": "HB",
+      "page": 1,
+
+      "level": 3,
+      "school": "E",
+
+      "time": [
+        { "number": 1, "unit": "action" }
+      ],
+
+      "range": {
+        "type": "point",
+        "distance": { "amount": 60, "type": "feet" }
+      },
+
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a shard of magnetized iron"
+      },
+
+      "duration": [
+        { "type": "instant" }
+      ],
+
+      "entries": [
+        "Each creature in a 10-foot radius must succeed on a Strength saving throw or be knocked {@condition Prone}."
+      ],
+
+      "savingThrow": ["strength"],
+      "damageInflict": ["bludgeoning"]
+    }
+  ]
+}

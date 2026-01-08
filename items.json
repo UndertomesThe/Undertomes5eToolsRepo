@@ -1,0 +1,42 @@
+items{
+  "item": [
+    {
+      "name": "Graviton Blade",
+      "source": "HB",
+      "page": 1,
+
+      "type": "M",
+      "weaponCategory": "martial",
+      "weapon": true,
+
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "property": ["V", "H"],
+
+      "range": null,
+
+      "entries": [
+        "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
+      ]
+    },
+	{
+  "item": [
+    {
+      "name": "Ring of Gravitic Control",
+      "source": "HB",
+      "page": 1,
+
+      "type": "RG",
+      "rarity": "rare",
+      "attunement": true,
+
+      "entries": [
+        "While wearing this ring, you have advantage on checks made to avoid being {@condition Grappled}.",
+        "Once per day, you can cast {@spell Levitate} without expending a spell slot."
+      ]
+    }
+  ]
+}
+
+  ]
+}
