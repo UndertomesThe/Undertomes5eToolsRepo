@@ -6,7 +6,7 @@
       "page": 1,
 
       "level": 3,
-      "school": "E",
+      "school": "V",
 
       "time": [
         { "number": 1, "unit": "action" }
@@ -28,7 +28,7 @@
       ],
 
       "entries": [
-        "Each creature in a 10-foot radius must succeed on a Strength saving throw or be knocked {@condition Prone}."
+        "Each creature in a 10-foot radius must succeed on a Strength saving throw or be knocked {@condition Crushed}."
       ],
 
       "savingThrow": ["strength"],
@@ -36,3 +36,4 @@
     }
   ]
 }
+
