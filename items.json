@@ -1,5 +1,5 @@
-items{
-  "item": [
+{
+"item": [
     {
       "name": "Graviton Blade",
       "source": "UT",
@@ -19,8 +19,6 @@ items{
         "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
       ]
     },
-	{
-  "item": [
     {
       "name": "Ring of Gravitic Control",
       "source": "UT",
@@ -35,8 +33,5 @@ items{
         "Once per day, you can cast {@spell Levitate} without expending a spell slot."
       ]
     }
-  ]
-}
-
   ]
 }

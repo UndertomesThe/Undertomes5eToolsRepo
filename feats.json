@@ -1,1 +1,13 @@
-spells
+{
+  "feat": [
+    {
+      "name": "Test Feat",
+      "source": "HB",
+      "page": 1,
+
+      "entries": [
+        "This is a test feat. If you can see this, feats are loading correctly."
+      ]
+    }
+  ]
+}
