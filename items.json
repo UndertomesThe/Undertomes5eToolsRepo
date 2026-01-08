@@ -2,7 +2,7 @@ items{
   "item": [
     {
       "name": "Graviton Blade",
-      "source": "HB",
+      "source": "UT",
       "page": 1,
 
       "type": "M",
@@ -23,7 +23,7 @@ items{
   "item": [
     {
       "name": "Ring of Gravitic Control",
-      "source": "HB",
+      "source": "UT",
       "page": 1,
 
       "type": "RG",

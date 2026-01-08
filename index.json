@@ -1,9 +1,22 @@
 {
-  "meta": {
-    "version": "1.0.0"
+    "meta": {
+    "version": "1.0.0",
+    "sources": [
+      {
+        "json": "UT",
+        "abbreviation": "UT",
+        "full": "The Undertomes Master Release",
+        "authors": ["UnlikeBishop, ZeroMene, Amefists, Kramath"],
+        "convertedBy": ["UnlikeBishop"]
+      }
+    ]
   },
+
   "spell": [
     "spells.json"
+  ],
+  "conditions" : [
+    "conditions.json"
   ],
   "feat": [
     "feats.json"
