@@ -1,27 +1,114 @@
 {
-    "meta": {
-    "version": "1.0.0",
-    "sources": [
-      {
-        "json": "UT",
-        "abbreviation": "UT",
-        "full": "The Undertomes Master Release",
-        "authors": ["UnlikeBishop, ZeroMene, Amefists, Kramath"],
-        "convertedBy": ["UnlikeBishop"]
-      }
-    ]
+  "_meta": {
+    "name": "Undertomes Master Homebrew",
+    "abbreviation": "UTHB",
+    "json": "undertomesHomebrew",
+    "version": "1.0",
+    "author": "UnlikeBishop, ZeroMene, Amefists, Kramath",
+    "lastUpdated": "2026-01-09"
   },
 
   "spell": [
-    "spells.json"
+    {
+      "name": "Gravity Pulse",
+      "source": "UT",
+      "page": 1,
+      "level": 3,
+      "school": "E",
+      "time": [
+        { "number": 1, "unit": "action" }
+      ],
+      "range": {
+        "type": "point",
+        "distance": { "amount": 60, "type": "feet" }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a shard of magnetized iron"
+      },
+      "duration": [
+        { "type": "instant" }
+      ],
+      "entries": [
+        "Each creature in a 10-foot radius must succeed on a Strength saving throw or be knocked {@condition Prone}."
+      ],
+      "savingThrow": ["strength"],
+      "damageInflict": ["bludgeoning"]
+    }
   ],
-  "condition" : [
-    "conditions.json"
+
+  "condition": [
+    {
+      "name": "Crushed",
+      "source": "UT",
+      "page": 1,
+      "entries": [
+        "A crushed creature suffers the following effects:",
+        {
+          "type": "list",
+          "items": [
+            "The creature's speed is reduced to 0.",
+            "Attack rolls against the creature have advantage.",
+            "The creature has disadvantage on Strength and Dexterity checks."
+          ]
+        }
+      ]
+    }
   ],
+
   "feat": [
-    "feats.json"
+    {
+  "feat": [
+    {
+      "name": "Test Feat",
+      "source": "UT",
+      "page": 1,
+
+      "entries": [
+        "This is a test feat. If you can see this, feats are loading correctly."
+      ]
+    }
+  ]
+}
   ],
+
   "item": [
-    "items.json"
+   {
+"item": [
+    {
+      "name": "Graviton Blade",
+      "source": "UT",
+      "page": 1,
+
+      "type": "weapon",
+      "weaponCategory": "martial",
+      "weapon": true,
+
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "property": ["V", "H"],
+
+      "entries": [
+        "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
+      ]
+    },
+    {
+      "name": "Ring of Gravitic Control",
+      "source": "UT",
+      "page": 1,
+
+      "type": "wondrousItem",
+      "rarity": "rare",
+      "attunement": true,
+
+      "entries": [
+        "While wearing this ring, you have advantage on checks made to avoid being {@condition Grappled}.",
+        "Once per day, you can cast {@spell Levitate} without expending a spell slot."
+      ]
+    }
+  ]
+}
+
   ]
 }
