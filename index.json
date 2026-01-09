@@ -1,7 +1,7 @@
 {
   "_meta": {
     "name": "Undertomes Master Homebrew",
-    "abbreviation": "UTHB",
+    "abbreviation": "UT",
     "json": "undertomesHomebrew",
     "version": "1.0",
     "author": "UnlikeBishop, ZeroMene, Amefists, Kramath",
@@ -112,3 +112,4 @@
 
   ]
 }
+
