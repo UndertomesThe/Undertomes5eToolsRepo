@@ -350,13 +350,13 @@
 			]
 		}
 	],
-	"conditions": [
+	"condition": [
 		{
 			"name": "Burn",
 			"source": "UTB",
 			"page": "UT",
 			"srd": true,
-			"basicRules": true,
+			"basicRules": false,
 			
 			"entries": [
 			{
@@ -370,4 +370,3 @@
 			}
 	]
 }
-
