@@ -1,7 +1,7 @@
 {
   "_meta": {
     "name": "Undertomes Master Homebrew",
-    "abbreviation": "UT",
+    "abbreviation": "UTHB",
     "json": "undertomesHomebrew",
     "version": "1.0",
     "author": "UnlikeBishop, ZeroMene, Amefists, Kramath",
@@ -22,19 +22,13 @@
         "type": "point",
         "distance": { "amount": 60, "type": "feet" }
       },
-      "components": {
-        "v": true,
-        "s": true,
-        "m": "a shard of magnetized iron"
-      },
-      "duration": [
-        { "type": "instant" }
-      ],
+      "components": { "v": true, "s": true, "m": "a shard of magnetized iron" },
+      "duration": [ { "type": "instant" } ],
       "entries": [
         "Each creature in a 10-foot radius must succeed on a Strength saving throw or be knocked {@condition Prone}."
       ],
-      "savingThrow": ["strength"],
-      "damageInflict": ["bludgeoning"]
+      "savingThrow": [ "strength" ],
+      "damageInflict": [ "bludgeoning" ]
     }
   ],
 
@@ -59,36 +53,26 @@
 
   "feat": [
     {
-  "feat": [
-    {
       "name": "Test Feat",
       "source": "UT",
       "page": 1,
-
       "entries": [
-        "This is a test feat. If you can see this, feats are loading correctly."
+        "This is a test feat.\nIf you can see this, feats are loading correctly."
       ]
     }
-  ]
-}
   ],
 
   "item": [
-   {
-"item": [
     {
       "name": "Graviton Blade",
       "source": "UT",
       "page": 1,
-
       "type": "weapon",
       "weaponCategory": "martial",
       "weapon": true,
-
       "dmg1": "1d8",
       "dmgType": "S",
       "property": ["V", "H"],
-
       "entries": [
         "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
       ]
@@ -97,11 +81,9 @@
       "name": "Ring of Gravitic Control",
       "source": "UT",
       "page": 1,
-
       "type": "wondrousItem",
       "rarity": "rare",
       "attunement": true,
-
       "entries": [
         "While wearing this ring, you have advantage on checks made to avoid being {@condition Grappled}.",
         "Once per day, you can cast {@spell Levitate} without expending a spell slot."
@@ -109,7 +91,3 @@
     }
   ]
 }
-
-  ]
-}
-
