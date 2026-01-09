@@ -352,21 +352,12 @@
 	],
 	"conditions": [
 		{
-			"name": "Blinded",
-			"source": "PHB",
-			"page": 290,
+			"name": "Burn",
+			"source": "UTB",
+			"page": "UT",
 			"srd": true,
 			"basicRules": true,
-			"otherSources": [
-				{
-					"source": "RMR",
-					"page": 62
-			},
-				{
-					"source": "HftT",
-					"page": 48
-			}
-		],
+			
 			"entries": [
 			{
 				"type": "list",
@@ -379,3 +370,4 @@
 			}
 	]
 }
+
