@@ -15,13 +15,8 @@
       "page": 1,
       "level": 3,
       "school": "E",
-      "time": [
-        { "number": 1, "unit": "action" }
-      ],
-      "range": {
-        "type": "point",
-        "distance": { "amount": 60, "type": "feet" }
-      },
+      "time": [ { "number": 1, "unit": "action" } ],
+      "range": { "type": "point", "distance": { "amount": 60, "type": "feet" } },
       "components": { "v": true, "s": true, "m": "a shard of magnetized iron" },
       "duration": [ { "type": "instant" } ],
       "entries": [
@@ -72,7 +67,7 @@
       "weapon": true,
       "dmg1": "1d8",
       "dmgType": "S",
-      "property": ["V", "H"],
+      "property": [ "V", "H" ],
       "entries": [
         "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
       ]
