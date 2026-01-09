@@ -349,5 +349,33 @@
 				}
 			]
 		}
+	],
+	"conditions": [
+		{
+			"name": "Blinded",
+			"source": "PHB",
+			"page": 290,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 62
+			},
+				{
+					"source": "HftT",
+					"page": 48
+			}
+		],
+			"entries": [
+			{
+				"type": "list",
+				"items": [
+					"A Burning creature is set ablaze constantly, taking an amount of d4 fire damage equal to the number of Burn stacks on itself at the end of their turn, also destroying half of the total stacks they currently have, rounded down. When at one Burn stack, it extinguishes at the end of the creature’s turn."
+				]
+			}
+			],
+			"hasFluffImages": false
+			}
 	]
 }
