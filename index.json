@@ -378,7 +378,7 @@
           "type": "list",
           "items": [
             "A creature suffering from Tremor is one suffering from immeasurable shaking and vibrations inside their body.",
-            "When a creature with Tremor suffers {@condition Tremor Burst} by other means, they take a number of d4 bludgeoning damage equal to the number of stacks of Tremor they currently have, then losing all stacks of Tremor. The Condition is also lost after combat is over or on the next short rest, if it was gained outside of combat."
+            "When a creature with Tremor suffers {@condition Tremor Burst|UTB} by other means, they take a number of d4 bludgeoning damage equal to the number of stacks of Tremor they currently have, then losing all stacks of Tremor. The Condition is also lost after combat is over or on the next short rest, if it was gained outside of combat."
           ]
         }
       ],
@@ -394,7 +394,7 @@
         {
           "type": "list",
           "items": [
-            "Tremor Burst is not a condition, but instead a trigger for the {@condition Tremor} condition which is caused by some feats, spells or other abilities."
+            "Tremor Burst is not a condition, but instead a trigger for the {@condition Tremor|UTB} condition which is caused by some feats, spells or other abilities."
           ]
         }
       ],
