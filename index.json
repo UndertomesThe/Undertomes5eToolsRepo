@@ -1,88 +1,353 @@
 {
-  "_meta": {
-    "name": "Undertomes Master Homebrew",
-    "abbreviation": "UTHB",
-    "json": "undertomesHomebrew",
-    "version": "1.0",
-    "author": "UnlikeBishop, ZeroMene, Amefists, Kramath",
-    "lastUpdated": "2026-01-09"
-  },
-
-  "spell": [
-    {
-      "name": "Gravity Pulse",
-      "source": "UT",
-      "page": 1,
-      "level": 3,
-      "school": "E",
-      "time": [ { "number": 1, "unit": "action" } ],
-      "range": { "type": "point", "distance": { "amount": 60, "type": "feet" } },
-      "components": { "v": true, "s": true, "m": "a shard of magnetized iron" },
-      "duration": [ { "type": "instant" } ],
-      "entries": [
-        "Each creature in a 10-foot radius must succeed on a Strength saving throw or be knocked {@condition Prone}."
-      ],
-      "savingThrow": [ "strength" ],
-      "damageInflict": [ "bludgeoning" ]
-    }
-  ],
-
-  "condition": [
-    {
-      "name": "Crushed",
-      "source": "UT",
-      "page": 1,
-      "entries": [
-        "A crushed creature suffers the following effects:",
-        {
-          "type": "list",
-          "items": [
-            "The creature's speed is reduced to 0.",
-            "Attack rolls against the creature have advantage.",
-            "The creature has disadvantage on Strength and Dexterity checks."
-          ]
-        }
-      ]
-    }
-  ],
-
-  "feat": [
-    {
-      "name": "Test Feat",
-      "source": "UT",
-      "page": 1,
-      "entries": [
-        "This is a test feat.\nIf you can see this, feats are loading correctly."
-      ]
-    }
-  ],
-
-  "item": [
-    {
-      "name": "Graviton Blade",
-      "source": "UT",
-      "page": 1,
-      "type": "weapon",
-      "weaponCategory": "martial",
-      "weapon": true,
-      "dmg1": "1d8",
-      "dmgType": "S",
-      "property": [ "V", "H" ],
-      "entries": [
-        "On a hit, the target must succeed on a Strength saving throw or be {@condition Restrained} until the start of your next turn."
-      ]
-    },
-    {
-      "name": "Ring of Gravitic Control",
-      "source": "UT",
-      "page": 1,
-      "type": "wondrousItem",
-      "rarity": "rare",
-      "attunement": true,
-      "entries": [
-        "While wearing this ring, you have advantage on checks made to avoid being {@condition Grappled}.",
-        "Once per day, you can cast {@spell Levitate} without expending a spell slot."
-      ]
-    }
-  ]
+	"_meta": {
+		"sources": [
+			{
+				"json": "UndertomesHBBuddy",
+				"abbreviation": "UTB",
+				"full": "Undertomes HB Buddy",
+				"version": "0.1",
+				"url": "https://raw.githubusercontent.com/UndertomesThe/Undertomes5eToolsRepo/refs/heads/main/index.json",
+				"authors": [
+					"UnlikeBishop",
+					"Zero",
+					"Amefists",
+					"Kramath"
+				],
+				"convertedBy": [
+					"UnlikeBishop"
+				],
+				"color": "ff14b5",
+				"colorNight": "a80575"
+			}
+		]
+	},
+	"spell": [
+		{
+			"uniqueId": "68654dad-78f0-45c1-a0bf-e2f757a7677b",
+			"name": "Binding Chains",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "XPHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You reach out your hand toward a target within reach, swirling your arm as five flashes of light appear around them and soon transforming into burning bright chains that bind them. You choose one target within reach to perform a Strength saving throw, becoming bound for the duration on a failure. They may re-attempt this saving throw at the end of their turns.",
+				"While bound, the target has their movement speed halved and a negative modifier to their Attack Rolls, Dexterity and Constitution saving throws equal to your proficiency bonus.",
+				"Singleton. The target also suffers the same negative modifier to Strength and Wisdom saving throws."
+			],
+			"source": "UndertomesHBBuddy",
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you may target an additional creature within range for each slot level above 4th."
+					]
+				}
+			],
+			"page": "Tome of the Index"
+		},
+		{
+			"uniqueId": "3e92e6dd-b0f9-4f05-a9e3-465527b4f2a7",
+			"name": "First Lightlock",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You crush the petal under your thumb to have its remains form a glowing sigil of a petal behind your shoulder, simultaneously creating increasing gashes of concentrated light. You perform a ranged spell attack roll against a target creature within reach, dealing {@damage 2d6} slashing damage on a hit.",
+				"Each time you cast this spell, you may use your Action during your next turn to spend a Spell Slot of one level greater to cast this spell at a greater Unlock rank, causing additional effects to trigger as per the following:",
+				"Unlock II. The second time this spell is cast you perform an additional ranged spell attack roll against the target, dealing {@damage 3d8} piercing damage on a hit. You have advantage on this roll if you hit the first attack.",
+				"Unlock III. The third time this spell is cast, the slashing damage it deals increases to {@dice 3d6} and the piercing damage it deals increases to {@dice 4d8}.",
+				"After using any greater Unlock rank, you may spend it's corresponding Spell Slot Level to cast this spell and make use of it's corresponding effects until the end of your next long rest.",
+				"Singleton. After causing the effects of Unlock III, you regain one first-level spell slot."
+			],
+			"source": "UndertomesHBBuddy",
+			"components": {
+				"s": true,
+				"r": true,
+				"m": "A lotus petal stained blue"
+			},
+			"page": "Tome of the Index"
+		},
+		{
+			"uniqueId": "8f452ae3-f03a-4b51-b950-1ab20cd248ed",
+			"name": "Sense Quarry",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You press your hands together and allow the slip of paper to be burnt, with its ashes forming a wave that washes around you, highlighting the silhouette of any creature within range that is actively fighting or harbours immediate hostile intent toward another creature.",
+				"You can discern what or who a creature is if you are familiar with their general shape but may not determine the target of their hostility."
+			],
+			"source": "UndertomesHBBuddy",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A slip of paper wishing for peace"
+			},
+			"page": "Tome of the Index",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the range increases by 100-ft. for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "7a88261c-37f6-48ff-ba50-8015f8d0b0b1",
+			"name": "Oblivio Ex Machina",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a series of arcane circles around a creature within range, each one replicating and firing countless magical projectiles in rapid succession. The target must make a Dexterity saving throw, taking {@damage 6d8} force damage on a failure, or half as much on a success.",
+				"The sheer force of the attack destabilizes the target. Whether they succeed or fail the first saving throw, they must also make a Strength saving throw. On a failure, they take an additional {@damage 2d8} force damage and are pushed up to 20 feet away from you. On a success, they are not pushed."
+			],
+			"source": "UndertomesHBBuddy",
+			"components": {
+				"v": true,
+				"s": true,
+				"r": true,
+				"m": "A sack of gunpowder"
+			},
+			"page": "Tome of Gears",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the Dexterity saving throw damage increases by {@dice 2d8} per slot level above 4th, and the push distance increases by 10 feet for every two slot levels above 4th (e.g., at 6th level, the target is pushed 30 feet instead of 20)."
+					]
+				}
+			]
+		},
+		{
+			"uniqueId": "dfb43154-ae46-49f5-9ad1-16075be08e7a",
+			"name": "Joyride",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "turn",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Druid",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"With a flick of your wrist, you manifest a spectral vehicle of your own design, propelling yourself forward at unstoppable speed. Your movement speed becomes 80 feet until the end of your turn and cannot be reduced during this time.",
+				"Whenever you move through another creature’s space for the first time this turn, they must make a Strength saving throw. On a failure, they take {@damage 4d8} bludgeoning damage and are knocked {@condition prone}. On a success, they take half damage and remain standing.",
+				"For each additional creature you run over, increase the spell’s damage by {@dice 1d8}. If the total damage would exceed {@dice 10d8}, it instead becomes {@damage 10d8} force damage, and further increases do not apply. You cannot run over {@condition prone} creatures.",
+				"If you would move off of a ledge that would cause you to fall more than 20-ft, you are instead flung forward in a line for double your remaining movement speed. If a creature is on that path, they must pass the same Dexterity Saving Throw or suffer {@damage 12d8} bludgeoning damage and be rendered {@condition prone}. If no creatures take damage from this or you hit a structure, you must pass a Constitution saving throw, suffering the same damage on failure or half on a success. The structure suffers double the damage rolled."
+			],
+			"source": "UndertomesHBBuddy",
+			"components": {
+				"v": true,
+				"s": true,
+				"r": true,
+				"m": "Fancy Shades"
+			},
+			"page": "Tome of Gears",
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the maximum damage increases by {@dice 1d8}, and your movement speed increases by 5 feet per level above 5th."
+					]
+				}
+			]
+		}
+	]
 }
